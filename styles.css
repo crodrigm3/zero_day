@@ -1,0 +1,53 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #8B4513;
+}
+
+p {
+  color: #8B4513;
+}
+
+a {
+  color: #8B4513;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  article {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: column;
+  }
+}
+
+li.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
